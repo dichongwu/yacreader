@@ -47,7 +47,10 @@
 #define DISABLE_SCROLL_ANIMATION "DISABLE_SCROLL_ANIMATION"
 #define MOUSE_MODE "MOUSE_MODE"
 #define ESCAPE_KEY_BEHAVIOR "ESCAPE_KEY_BEHAVIOR"
-#define SCALING_METHOD "SCALING_METHOD"
+// Suffix _V2 keeps this fork's value isolated from an official YACReader build
+// sharing the same settings domain: the official build does not know enum
+// value 3 (Bicubic) and would fall through its scale-method switch.
+#define SCALING_METHOD "SCALING_METHOD_V2"
 #define SAVE_RENDERED_PAGE_DIRECTORY "SAVE_RENDERED_PAGE_DIRECTORY"
 #define EXTRACT_PAGE_DIRECTORY "EXTRACT_PAGE_DIRECTORY"
 
